@@ -1,0 +1,28 @@
+[
+	{
+		"name": "private",
+		"type": "confirm",
+		"message": "private?"
+	},
+	{
+		"name": "author",
+		"type": "input",
+		"message": "author?"
+	},
+	{
+		"name": "description",
+		"type": "input",
+		"message": "description?"
+	},
+	{
+		"name": "elementGui",
+		"type": "confirm",
+		"message": "是否使用elementGui"
+	},
+	{
+		"name": "css",
+		"type": "list",
+		"message": "选择预编译",
+		"choices": ["less", "sass"]
+	}
+]
