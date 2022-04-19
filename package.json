@@ -1,7 +1,9 @@
 {
   "name": "test",
   "version": "0.1.0",
-  "private": true,
+  "private": "{{private}}",
+  "description": "{{description}}",
+  "author": "{{author}}",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,7 +11,10 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    {{#if elementGui}}
     "element-gui": "^1.5.3",
+    {{/if}}
+    
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"
@@ -28,10 +33,14 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^8.0.3",
-    "less": "^4.1.2",
-    "less-loader": "^10.2.0",
+    {{#if sass}}
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
+    {{/if}}
+    {{# if less}}
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    {{/if}}
     "vue-template-compiler": "^2.6.14"
   }
 }
